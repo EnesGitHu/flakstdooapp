@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="jumbotron text-center">
+
+    <h3>Enes BLOG sayfasına hoşgeldiniz</h3>
+    <p>Bu blogta geliştiricler olarak bloglarınızı paylaşabilirsiniz</p>
+
+
+</div>
+
+<ul>
+    {% for article in articles %}
+        <li>Article Id: {{article.id}} - Title: {{article.title}} - Content: {{article.content}} </li>
+    
+    {% endfor %}
+</ul>
+
+  
+
+
+{% endblock %}
+
